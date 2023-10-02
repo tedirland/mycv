@@ -12,8 +12,9 @@ import { Report } from './reports/report.entity';
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'db.sqlite',
-      // Wire up an created entities here
       entities: [User, Report],
+      // This will look at the structure of your entities and update the db accordingly
+      // Do not run this in prod
       synchronize: true,
     }),
     UsersModule,
