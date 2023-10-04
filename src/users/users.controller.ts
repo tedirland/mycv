@@ -10,6 +10,7 @@ export class UsersController {
     createUser(@Body() body: CreateUserDto){
         this.usersService.create(body.email, body.password)
     }
+    
 
 
 }
