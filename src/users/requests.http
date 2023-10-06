@@ -16,9 +16,9 @@ GET http://localhost:3000/auth/2
 GET http://localhost:3000/auth?email=fjed@gmail.com
 
 ### Remove a particular user with a given id
-DELETE  http://localhost:3000/auth/1
+DELETE  http://localhost:3000/auth/54
 ### Update a User
-PATCH   http://localhost:3000/auth/2
+PATCH   http://localhost:3000/auth/54
 Content-Type: application/json
 
 {
