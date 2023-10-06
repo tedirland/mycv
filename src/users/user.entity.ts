@@ -1,5 +1,6 @@
 import { AfterInsert, AfterRemove, AfterUpdate,Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
+
 @Entity()
 export class User {
     @PrimaryGeneratedColumn()
@@ -9,6 +10,7 @@ export class User {
     email: string;
     
     @Column()
+    // This decorator tells nest to not include this in json response
     password: string;
 
     @AfterInsert()
